@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/teachers")
+@RequestMapping("/courses")
 public class courcehttpController {
 }
