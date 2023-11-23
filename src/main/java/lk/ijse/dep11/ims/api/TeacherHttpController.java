@@ -23,7 +23,7 @@ public class TeacherHttpController {
     public TeacherHttpController() {
         HikariConfig config = new HikariConfig();
         config.setUsername("root");
-        config.setPassword("7788");
+        config.setPassword("mysql");
         config.setJdbcUrl("jdbc:mysql://localhost:3306/dep11_ims");
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
         config.addDataSourceProperty("maximumPoolSize", 10);
@@ -33,9 +33,6 @@ public class TeacherHttpController {
     public void destroy(){
         pool.close();
     }
-
-
-
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(produces = "application/json", consumes = "application/json")
